@@ -1,3 +1,4 @@
+/* Display Time */
 function checkTime(i) {
   if (i < 10) {
     i = "0" + i;
@@ -27,6 +28,23 @@ function startTime() {
   }, 500);
 }
 startTime();
+
+/* Display Date */
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1;
+var yyyy = today.getFullYear();
+
+if(dd < 10) {
+  dd = '0' + dd
+}
+
+if(mm < 10){
+  mm = '0' + mm
+}
+
+today = dd + '/' + mm + '/' + yyyy;
+document.write(today);
 
 var latestDownloadId;
 
