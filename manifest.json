@@ -1,23 +1,23 @@
 {
-
-  "description": "Shows the last downloaded item, and lets you open or delete it",
-  "manifest_version": 2,
-  "name": "latest-download",
-  "version": "1.0",
-  "icons": {
-    "20": "icons/page-20.jpg"
-  },
-
-  "permissions": [
-    "downloads",
-    "downloads.open"
-  ],
-
-  "browser_action": {
-    "browser_style": true,
-    "default_icon": "icons/page-20.jpg",
-    "default_title": "Download Item",
-    "default_popup": "popup/DownloadItem.html"
+  
+    "description": "It will display the downloaded item and also can open and remove from it",
+    "manifest_version": 2,
+    "name": "Download Item",
+    "version": "1.0",
+    "icons": {
+      "20": "icons/page-20.jpg"
+    },
+  
+    "permissions": [
+      "downloads",
+      "downloads.open"
+    ],
+  
+    "browser_action": {
+      "browser_style": true,
+      "default_icon": "icons/page-20.jpg",
+      "default_title": "Download Item",
+      "default_popup": "popup/DownloadItem.html"
+    }
+  
   }
-
-}
