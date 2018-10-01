@@ -109,6 +109,7 @@ function removeItem() {
   if (!document.querySelector("#remove").classList.contains("disabled")) {
     browser.downloads.removeFile(latestDownloadId);
     browser.downloads.erase({id: latestDownloadId});
+    window.alert("Confirm Delete");
     window.close();
   }
 }
